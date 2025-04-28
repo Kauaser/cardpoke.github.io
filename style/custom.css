@@ -1,0 +1,283 @@
+
+/* textos */
+.text-muted {
+    color: #ffffff !important;
+    font-size: large;
+}
+
+h2.text-center {
+    color: #fffdf5; /* Substitua pelo valor da cor que você preferir */
+}
+
+/* === Variáveis === */
+:root {
+    --primary-color: #e9bf03;
+    --secondary-color: #ffffff;
+    --text-color: #333333;
+    --hover-color: #ffeb3b;
+    --border-color: #e0e0e0;
+    --btn-hover-color: #fbc02d;
+}
+
+body.login-page {
+    background: url('../imagens/pokebal.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.background {
+    background: url('../imagens/pokebal.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Ajuste para o conteúdo principal */
+.main-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+/* === Background geral === */
+body {
+    margin: 0;
+    padding: 70px 0 0 0; /* Espaço para a navbar */
+    background-size: cover;
+}
+
+/* === Navbar === */
+.navbar-yellow {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.fixed-top {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1050;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--hover-color) !important;
+}
+
+/* === Cadastro === */
+.body-cadastro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../imagens/pokebal.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#cadastro {
+    padding: 2rem 2.5rem;
+    background: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#cadastro h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#cadastro p {
+    margin-bottom: 1rem;
+}
+
+#cadastro input[type="text"],
+#cadastro input[type="email"],
+#cadastro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#cadastro input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cadastro input[type="submit"]:hover {
+    background: var(--btn-hover-color);
+}
+
+#cadastro .link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Banner */
+#banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* === Login === */
+.login-box {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.login-box-msg {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* === Cards de Produtos === */
+.card-hover {
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.card-img-top:hover {
+    opacity: 0.85;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* === Botões === */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+}
+
+/* === Footer === */
+.main-footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.main-footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: var(--hover-color);
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-nav .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 8px 15px;
+    }
+}
